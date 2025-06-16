@@ -1,4 +1,5 @@
 package clinic.programming.training;
+
 import org.apache.commons.lang3.StringUtils;
 
 public class Application {
@@ -11,19 +12,19 @@ public class Application {
     }
 
     // method main(): ALWAYS the APPLICATION entry point
-    public static void main (String[] args) {
-    	System.out.println ("Starting Application");
-	Application app = new Application();
-    app.greet();
-    
-    String testString = "   Hello Maven!   ";
+    public static void main(String[] args) {
+        System.out.println("Starting Application");
+        Application app = new Application();
+        app.greet();
 
-    // Check if the string is blank
-    if (StringUtils.isBlank(testString)) {
-        System.out.println("The string is blank.");
-    } else {
-        // Trim the string and print it
-        System.out.println("Trimmed string: '" + StringUtils.trim(testString) + "'");
-    }
+        String testString = "   Hello Maven!   ";
+
+        // Check if the string is blank
+        if (StringUtils.isBlank(testString)) {
+            System.out.println("The string is blank.");
+        } else {
+            // Trim the string and print it
+            System.out.println("Trimmed string: '" + StringUtils.trim(testString) + "'");
+        }
     }
 }
